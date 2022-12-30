@@ -14,6 +14,40 @@ Our dataset is stored in `.npy` binary files and can be easily retrieved.
 
 ## Biased Corpus
 
+The dataset is structured as followed:
+
+```json
+{
+    'train':{
+        # original corpus
+        'ori_sentence': [
+            sent_0,
+            sent_1,
+            ...
+        ], 
+        # bias types, stored as one-hot labels
+        'bias_labels': [
+            [0 1 0],
+            [0 1 0],
+            [0 1 0],
+            ...
+        ],
+        # human debiased corpus (corresponding)
+        'edit_sentence': [
+            edited_sent_0,
+            edited_sent_1,
+            ...
+        ],
+    },
+    'valid':{
+        ... # similar
+    },
+    'test':{
+        ... # similar
+    }
+}
+```
+
 Instructions to load the annotated biased corpus:
 
 ```python
@@ -45,7 +79,29 @@ dict_keys(['train', 'valid', 'test'])
 
 ## Non-Biased Corpus
 
-The non-biased corpus is also stored as `.npy` but much simpler. It only has `text` key since it doesn't require extra annotation.
+The non-biased corpus is also stored as `.npy` but much simpler. It only has `text` key since it doesn't require extra annotation. The dataset is structured as followed:
+
+```json
+{
+    'train':{
+        # original corpus
+        'text': [
+            sent_0,
+            sent_1,
+            ...
+        ], 
+    },
+    'valid':{
+        ... # similar
+    },
+    'test':{
+        ... # similar
+    }
+}
+```
+
+To load the dataset:
+
 ```python
 >>> import numpy as np
 >>> non_bias_corpus = np.load('dataset/CORGI-PC_splitted_non-bias_corpus_v1.npy',allow_pickle=True).item()
