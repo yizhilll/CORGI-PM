@@ -1,4 +1,12 @@
+README languages/语言: 
+- [![English](https://img.shields.io/badge/lang-EN-green.svg)](https://github.com/yizhilll/CORGI-PM/READM.md)
+- [![中文](https://img.shields.io/badge/lang-中文-red.svg)](https://github.com/yizhilll/CORGI-PM/README.zh.md)
 
+# Introduction
+
+**CORGI-PM 🐶** is a Chinese cOrpus foR Gender bIas Probing and Mitigation, which contains **32.9k** sentences with high-quality labels derived by following an annotation scheme specifically developed for gender bias in the Chinese context.
+
+We address three challenges for automatic textual gender bias mitigation, which requires the models to detect, classify, and mitigate textual gender bias. 
 
 # Data Usage
 
@@ -49,13 +57,31 @@ The non-biased corpus is also stored as `.npy` but much simpler. It only has `te
 '那个辛苦劲儿，就是个壮实的男劳力也吃不消，不过我也挺过来了！']
 ```
 
-# Experiment
+# Automatic Textual Gender Bias Mitigation Experiments
 
-## Bias Type Multilabel Task and Bias Detction Task
+## Bias Detection
 
-To run the multilabel and dection tasks:
+We formulate the bias detection tasks as binary classification. To run the codes:
 
 ```shell
-python -u src/run_classification.py multilabel  
 python -u src/run_classification.py detection 
+```
+
+## Bias Classification
+
+Gender bias type classification is formulated as a multilabel classification task.
+
+```
+python -u src/run_classification.py multilabel  
+```
+
+## Bias Mitigation
+
+TBD
+
+# Citation
+
+
+```bibtex
+TBD
 ```
