@@ -139,5 +139,14 @@ TBD
 
 
 ```bibtex
-TBD
+@misc{https://doi.org/10.48550/arxiv.2301.00395,
+  doi = {10.48550/ARXIV.2301.00395},
+  url = {https://arxiv.org/abs/2301.00395},
+  author = {Zhang, Ge and Li, Yizhi and Wu, Yaoyao and Zhang, Linyuan and Lin, Chenghua and Geng, Jiayi and Wang, Shi and Fu, Jie},
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Computers and Society (cs.CY), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {CORGI-PM: A Chinese Corpus For Gender Bias Probing and Mitigation},
+  publisher = {arXiv},
+  year = {2023},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
