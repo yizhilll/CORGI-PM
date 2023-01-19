@@ -4,7 +4,7 @@ README languages/语言:
 
 # Introduction
 
-**CORGI-PM <img src="./README.assets/corgi.jpg" alt="corgi" style="zoom:4%;" />**  is a Chinese cOrpus foR Gender bIas Probing and Mitigation, which contains **32.9k** sentences with high-quality labels derived by following an annotation scheme specifically developed for gender bias in the Chinese context.
+**CORGI-PM **  is a Chinese cOrpus foR Gender bIas Probing and Mitigation, which contains **32.9k** sentences with high-quality labels derived by following an annotation scheme specifically developed for gender bias in the Chinese context.
 
 We address three challenges for automatic textual gender bias mitigation, which requires the models to detect, classify, and mitigate textual gender bias.
 
