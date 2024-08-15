@@ -1,7 +1,3 @@
-README languages/语言:
-- [![English](https://img.shields.io/badge/lang-EN-green.svg)](https://github.com/yizhilll/CORGI-PM/blob/main/README.md)
-- [![中文](https://img.shields.io/badge/lang-中文-red.svg)](https://github.com/yizhilll/CORGI-PM/blob/main/README.zh.md)
-
 # 介绍
 
 CORGI-PM🐶 是一个中文性别偏见探测和缓解语料库，包含32.9k个句子，通过按照特定的中文性别偏见注释方案进行高质量标注。
@@ -129,22 +125,4 @@ python -u src/run_classification.py detection
 
 ```shell
 python -u src/run_classification.py detection 
-```
-## 偏见缓解
-
-待完成
-
-# 引用
-
-```bibtex
-@misc{https://doi.org/10.48550/arxiv.2301.00395,
-  doi = {10.48550/ARXIV.2301.00395},
-  url = {https://arxiv.org/abs/2301.00395},
-  author = {Zhang, Ge and Li, Yizhi and Wu, Yaoyao and Zhang, Linyuan and Lin, Chenghua and Geng, Jiayi and Wang, Shi and Fu, Jie},
-  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Computers and Society (cs.CY), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {CORGI-PM: A Chinese Corpus For Gender Bias Probing and Mitigation},
-  publisher = {arXiv},
-  year = {2023},
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
 ```
