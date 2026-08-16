@@ -1,3 +1,5 @@
+
+
 README languages/语言: 
 - [![English](https://img.shields.io/badge/lang-EN-green.svg)](https://github.com/yizhilll/CORGI-PM/blob/main/README.md)
 - [![中文](https://img.shields.io/badge/lang-中文-red.svg)](https://github.com/yizhilll/CORGI-PM/blob/main/README.zh.md)
@@ -117,7 +119,7 @@ To load the dataset:
 
 ## Bias Detection
 
-We formulate the bias detection tasks as binary classification. To run the codes:
+We formulate the bias detection tasks as binary classification over the biased and non-biased corpora. To run the codes:
 
 ```shell
 python -u src/run_classification.py detection 
